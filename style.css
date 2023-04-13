@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background: linear-gradient(to right, #ff0000, #fff200, #1e9600);   */
+    background: linear-gradient(to right, #485563, #29323c);
+
+}
+:root{
+    --black:#000;
+}
+
+.div-form {
+    border: 1px solid rgba(255,255,255,0.5);
+    background: linear-gradient(to right, #abbaab, #ffffff);
+    border-radius: 9px;
+    padding: 5%;
+    box-shadow: -20px 20px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  input{
+    outline: none;
+  }
+  .btn.btn-outline-primary.btn-lg {
+    margin-bottom: 8px;
+  }
+  
+  .div-list {
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    padding: 1%;
+    border-radius: 15px;
+    margin: 1% 0;
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.5);
+  }
+  th:first-child{
+    width: 2%;
+  }
+  #tools {
+    width: 10%;
+  }
+  #edit-id-1 {
+    cursor: pointer;
+  }
+  /* th:last-child{
+    background-color: yellow !important;
+    
+  } */
+  /* #time-th {
+    width: 10%;
+  } */
+  #todo-th {
+    width: 50% !important;
+  }
+  .close-btn{
+    background-color:#f8000098;
+    padding: 10px;
+    border-radius:45px;
+  }
+  .close-btn {
+    background-color: #f8000098;
+    border-radius: 52px;
+    width: 30px !important;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /* clock */
+  .clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./image/clock.png);
+      background-size: auto;
+    background-size: cover;
+    border: 4px solid #091921;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),inset 0 -15px 15px rgba(255,255,255,0.05),0 15px 15px rgba(0,0,0,0.3),inset 0 15px 15px rgba(0,0,0,0.3);
+  }
+  .clock::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1000000;
+  }
+
+  .clock .hour,
+  .clock .min,
+  .clock .sec{
+    position: absolute;
+  }
+  .clock .hour,.hr{
+    width: 160px;
+    height: 160px;
+  }
+  .clock .min,.mn{
+    width: 190px;
+    height: 190px;
+  }
+  .clock .sec,.sc{
+    width: 230px;
+    height: 230px;
+  }
+  .hr,.mn,.sc{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    border-radius: 50%;
+  }
+  .hr::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+
+
+  }
+  .mn::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+
+
+  }
+  .sc::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+
+
+  }
+/* clock center div */
+.clock-center{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+
+  /* clock close */
